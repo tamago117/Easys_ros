@@ -21,6 +21,12 @@ class ThrusterController(Node):
            exit()
 
     def listener_callback(self, msg):
+        # constrain -1 to 1
+        if msg.data > 1:
+            msg.data = 1
+        elif msg.data < -1:
+            msg.data = -1
+
         pulse_width = self.scale_input(msg.data)
         self.pi.set_servo_pulsewidth(ESC_PIN, pulse_width)
 

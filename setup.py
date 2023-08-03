@@ -10,6 +10,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/Easys_control.launch.py']),
+        ('share/' + package_name + '/config', ['config/bno055_params_i2c.yaml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -23,6 +25,7 @@ setup(
             'Easys_ros = Easys_ros.Easys_ros:main',
             'joy2cmd = Easys_ros.joy2cmd:main',
             'thruster_controller = Easys_ros.thruster_controller:main',
+            'Easys_controller = Easys_ros.Easys_controller:main',
         ],
     },
 )
