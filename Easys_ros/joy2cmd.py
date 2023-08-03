@@ -17,7 +17,7 @@ class JoyToTwist(Node):
     def joy_callback(self, msg):
         # JoyメッセージからTwistメッセージを作成します
         twist = Twist()
-        twist.linear.x = msg.axes[4]
+        twist.linear.x = msg.axes[3]
         twist.angular.z = msg.axes[0]
 
         # -1.0 ~ 1.0 -> 0 ~ 1

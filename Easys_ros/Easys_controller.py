@@ -1,15 +1,13 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
 
 class EasysController(Node):
     def __init__(self):
         super().__init__('Easys_controller')
-        
-        # Publishers for float64
-        self.linear_x_pub = self.create_publisher(Float64, '/input', 10)
-        self.angular_z_pub = self.create_publisher(Float64, '/angular_z', 10)
+
+        self.thruster_pub = self.create_publisher(Float64MultiArray, '/thruster_input', 10)
 
         # Subscriber for /cmd_vel
         self.subscription = self.create_subscription(
@@ -24,14 +22,13 @@ class EasysController(Node):
         linear_x = msg.linear.x
         angular_z = msg.angular.z
         
-        # Publish the values as Float64
-        linear_x_msg = Float64()
-        linear_x_msg.data = linear_x
-        self.linear_x_pub.publish(linear_x_msg)
-        
-        angular_z_msg = Float64()
-        angular_z_msg.data = angular_z
-        self.angular_z_pub.publish(angular_z_msg)
+        # Calculate thruster inputs
+        input = Float64MultiArray()
+        input.data = [linear_x, -linear_x, angular_z, -angular_z]
+
+        # Publish thruster inputs
+        self.thruster_pub.publish(input)
+
 
 def main(args=None):
     rclpy.init(args=args)
