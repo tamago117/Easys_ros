@@ -1,4 +1,4 @@
-from controller.PID import PID
+from .PID import PID
 
 class PID_controller:
     def __init__(self, config):
@@ -38,8 +38,8 @@ class PID_controller:
         kp = 1.0
         ky = 1.0
 
-        T1 = 0.5*(kp*self.pitch_PID.control(current_pitch, 0) + kr*self.roll_PID.control(current_roll, 0)) + Vz
-        T2 = 0.5*(kp*self.pitch_PID.control(current_pitch, 0) - kr*self.roll_PID.control(current_roll, 0)) + Vz
+        T1 = -(0.5*(kp*self.pitch_PID.control(current_pitch, 0) + kr*self.roll_PID.control(current_roll, 0)) + Vz)
+        T2 = -(0.5*(kp*self.pitch_PID.control(current_pitch, 0) - kr*self.roll_PID.control(current_roll, 0)) + Vz)
         T0 = Vx - yaw_rate*ky
         T3 = Vx + yaw_rate*ky
         

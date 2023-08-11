@@ -26,7 +26,8 @@ def generate_launch_description():
 
     Easys_controller = Node(
             package=package_name,
-            executable='Easys_controller',)
+            executable='Easys_controller',
+            output='screen',)
 
     thruster_controller = Node(
             package=package_name,
@@ -41,7 +42,9 @@ def generate_launch_description():
             package="bno055",
             executable="bno055",
             parameters=[bno055_config
-            ,])
+            ,],
+            remappings=[("/bno055/imu", "imu")],
+            )
 
     v4l2_camera = Node(
             package="v4l2_camera",

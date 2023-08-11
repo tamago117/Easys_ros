@@ -22,7 +22,7 @@ class JoyToTwist(Node):
 
         # -1.0 ~ 1.0 -> 0 ~ 1
         twist.linear.z = (msg.axes[5] - 1.0) / 2.0
-        if msg.buttons[5] == 1:
+        if msg.buttons[10] == 1:
             twist.linear.z = -twist.linear.z
 
 

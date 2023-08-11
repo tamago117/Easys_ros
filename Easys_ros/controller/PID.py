@@ -6,8 +6,8 @@ class PID:
         self.ki = ki
         self.kd = kd
         self.dt = dt
-        self.min = min
-        self.max = max
+        self.min = min_output_val
+        self.max = max_output_val
         self.integral = 0
         self.previous_error = 0
 

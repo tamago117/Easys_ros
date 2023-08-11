@@ -5,7 +5,7 @@ from geometry_msgs.msg import Twist
 from std_msgs.msg import Float64MultiArray
 from sensor_msgs.msg import Imu
 
-from controller import PID_controller
+from .controller.PID_controller import PID_controller
 
 class EasysController(Node):
     def __init__(self):
@@ -13,7 +13,7 @@ class EasysController(Node):
 
         # Initialize PID controllers
         config = {
-            "rollP": 0.0,
+            "rollP": 2,
             "rollI": 0.0,
             "rollD": 0.0,
             "pitchP": 0.0,
@@ -21,7 +21,7 @@ class EasysController(Node):
             "pitchD": 0.0,
             "dt": 0.02
         }
-        self.pid_controller = PID_controller.PID_controller(config)
+        self.pid_controller = PID_controller(config)
 
         self.thruster_pub = self.create_publisher(Float64MultiArray, '/thruster_input', 10)
 
@@ -77,7 +77,10 @@ class EasysController(Node):
         # Calculate thruster inputs
         input = Float64MultiArray()
         input.data = self.pid_controller.control(roll, pitch, cmd_vel.linear.x, cmd_vel.linear.z, cmd_vel.angular.z)
-        print(input.data)
+        #print(input.data)
+        #print(roll, pitch, yaw)
+
+        #input.data = [0.0, 0.0, 0.0, 0.0]
 
         # Publish thruster inputs
         self.thruster_pub.publish(input)
