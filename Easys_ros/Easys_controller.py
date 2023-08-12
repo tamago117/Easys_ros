@@ -13,7 +13,7 @@ class EasysController(Node):
 
         # Initialize PID controllers
         config = {
-            "rollP": 2,
+            "rollP": 0.7,
             "rollI": 0.0,
             "rollD": 0.0,
             "pitchP": 0.0,

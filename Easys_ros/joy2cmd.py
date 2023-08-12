@@ -14,9 +14,17 @@ class JoyToTwist(Node):
         # cmd_vel topicにデータをpublish
         self.twist_pub = self.create_publisher(Twist, 'cmd_vel', 10)
 
+        self.slow_gain = 0.3
+
     def joy_callback(self, msg):
         # JoyメッセージからTwistメッセージを作成します
         twist = Twist()
+
+        if msg.buttons[9] == 1:
+            slow_mode = False
+        else:
+            slow_mode = True
+
         twist.linear.x = msg.axes[3]
         twist.angular.z = msg.axes[0]
 
@@ -25,6 +33,10 @@ class JoyToTwist(Node):
         if msg.buttons[10] == 1:
             twist.linear.z = -twist.linear.z
 
+        if slow_mode == True:
+            twist.linear.x = self.slow_gain*twist.linear.x
+            twist.angular.z = self.slow_gain*twist.angular.z
+            twist.linear.z = self.slow_gain*twist.linear.z
 
         # Twistメッセージをpublishします
         self.twist_pub.publish(twist)
