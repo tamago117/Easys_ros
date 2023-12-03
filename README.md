@@ -3,7 +3,7 @@ Easys is an in-water robot. This repository contains hardware and software sourc
 
 ※ **Currently working on an improved version!**
 - Add a simulator
-- Addition of odometry function
+- Add odometry function
 - Miniaturization of circuits
 - Change to fisheye camera
 - improve pressure-resistant cap
