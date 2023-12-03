@@ -1,5 +1,13 @@
 # Easys_ros
 Easys is an in-water robot. This repository contains hardware and software source(ROS2).
+
+※ **Currently working on an improved version!**
+- Add a simulator
+- Addition of odometry function
+- Miniaturization of circuits
+- Change to fisheye camera
+- improve pressure-resistant cap
+
 ![IMG_9673](https://github.com/tamago117/Easys_ros/assets/38370926/150ee971-6230-4fc3-9c5f-c7301954f7d2)
 ![P8132769](https://github.com/tamago117/Easys_ros/assets/38370926/9c8923b8-014f-4e5c-a402-4565e1488479)
 
