@@ -76,6 +76,7 @@ class EasysController(Node):
 
         # Calculate thruster inputs
         input = Float64MultiArray()
+        input.data = [0.0, 0.0, 0.0, 0.0]
         input.data = self.pid_controller.control(roll, pitch, cmd_vel.linear.x, cmd_vel.linear.z, cmd_vel.angular.z)
         #print(input.data)
         #print(roll, pitch, yaw)
