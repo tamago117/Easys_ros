@@ -25,12 +25,12 @@ class JoyToTwist(Node):
         else:
             slow_mode = True
 
-        twist.linear.x = msg.axes[3]
-        twist.angular.z = msg.axes[0]
+        twist.linear.x = msg.axes[1]
+        twist.angular.z = msg.axes[3]*3.0
 
         # -1.0 ~ 1.0 -> 0 ~ 1
         twist.linear.z = (msg.axes[5] - 1.0) / 2.0
-        if msg.buttons[10] == 1:
+        if msg.buttons[1] == 1:
             twist.linear.z = -twist.linear.z
 
         if slow_mode == True:

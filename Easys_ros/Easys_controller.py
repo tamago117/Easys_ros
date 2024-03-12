@@ -16,9 +16,9 @@ class EasysController(Node):
             "rollP": 0.7,
             "rollI": 0.0,
             "rollD": 0.0,
-            "pitchP": 0.0,
+            "pitchP": 0.3,
             "pitchI": 0.0,
-            "pitchD": 0.0,
+            "pitchD": 1.0,
             "dt": 0.02
         }
         self.pid_controller = PID_controller(config)
