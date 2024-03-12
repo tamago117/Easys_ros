@@ -16,7 +16,7 @@ class ThrusterOutputConverter(Node):
         self.left_up_pub = self.create_publisher(Float64, '/left_up/cmd_thruster', 10)
         self.right_up_pub = self.create_publisher(Float64, '/right_up/cmd_thruster', 10)
 
-        self.power_gain = 100.0
+        self.power_gain = 200.0
 
     def thruster_callback(self, msg):
         left_down = Float64()
@@ -28,10 +28,10 @@ class ThrusterOutputConverter(Node):
         right_up = Float64()
         right_up.data = msg.data[2] * self.power_gain
 
-        # self.left_down_pub.publish(left_down)
-        # self.right_down_pub.publish(right_down)
-        # self.left_up_pub.publish(left_up)
-        # self.right_up_pub.publish(right_up)
+        self.left_down_pub.publish(left_down)
+        self.right_down_pub.publish(right_down)
+        self.left_up_pub.publish(left_up)
+        self.right_up_pub.publish(right_up)
 
 def main(args=None):
     rclpy.init(args=args)
