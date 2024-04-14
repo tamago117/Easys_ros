@@ -21,11 +21,17 @@ Unfortunately, several components are currently only available in Japan... The n
 ## 2. Fabrication of circuit components
 ### 2.1  Main circuit
 
+
 ### 2.2 Attach the connectors
 
 
 ## 3. Assembly
 ### 3.1 Thrusters
+Heat press fitting the insert with a soldering iron.
+
+(インサートが入っている画像)
+
+
 
 ### 3.2 Battery box
 
