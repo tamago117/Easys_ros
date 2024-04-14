@@ -1,5 +1,5 @@
 # Easys_ros
-Easys is an in-water robot. This repository contains hardware and software source(ROS2).
+Easys is an open source under water robot. This repository contains hardware and software source(ROS2).
 
 ※ **Currently working on an improved version!**
 - Add a simulator
