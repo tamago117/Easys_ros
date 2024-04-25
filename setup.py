@@ -29,6 +29,7 @@ setup(
             'joy2cmd = Easys_ros.joy2cmd:main',
             'thruster_controller = Easys_ros.thruster_controller:main',
             'Easys_controller = Easys_ros.Easys_controller:main',
+            'thruster_output_converter = Easys_ros.thruster_output_converter:main',
         ],
     },
 )
