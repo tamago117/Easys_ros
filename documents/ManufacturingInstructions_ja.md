@@ -31,7 +31,8 @@
 回路図は以下の通りです。
 
 
-https://photos.google.com/photo/AF1QipPIGC88t4_c1m9DzCCM4yatyo6ockO62BAwN5Ce
+![IMG_20240425_190702078](https://github.com/Honazo/Easys_ros/assets/63952012/efa6e756-37ef-4513-9849-9a1661badef7)
+
 
 ラズパイのUSBポートにwebカメラのUSB端子を接続します。
 
@@ -55,17 +56,21 @@ https://photos.google.com/photo/AF1QipPIGC88t4_c1m9DzCCM4yatyo6ockO62BAwN5Ce
 ### 3.1 スラスター
 インサートをはんだこてで熱圧入します。
 
-https://photos.google.com/photo/AF1QipPyfAP-WlFDBXjEmw30UjYo2gyMClS3P8tQ_k2W
+![IMG_20240425_190227982](https://github.com/Honazo/Easys_ros/assets/63952012/1861baf3-a66d-47e8-bd0f-77d8b9c01c74)
+
+
+
 
 スラスターをスラスターマウントに固定します。
 
-https://photos.google.com/photo/AF1QipOBrPf4KzAw2HFzhHzbsw0A3fmQ6uDxsLyoG9jG
+![IMG_20240425_190615992](https://github.com/Honazo/Easys_ros/assets/63952012/9d449b39-f9e1-4558-bf7a-0d0c9b0d5007)
 
 ### 3.2 バッテリーボックス
 
 バッテリーボックスの底面の4つの穴すべてにインサートナットを熱圧入します。
 
-https://photos.google.com/photo/AF1QipPMnMNCst_3OrLbGvNdTrm9Rvhi672HmYDeoZMk
+![IMG_20240425_190811990](https://github.com/Honazo/Easys_ros/assets/63952012/cf0e0b8e-5965-43d1-888c-ce024883fda2)
+
 
 
 バッテリーボックスの辺が短い方の側面にΦ12mmの穴を1つあけます。
@@ -93,7 +98,8 @@ TコネクタでLi-Poバッテリーを接続します。
 バッテリーボックス固定用のマウントに下側外部フレームを接続します。
 バッテリーボックス固定用のマウントにバッテリーボックスを接続します。
 
-https://photos.google.com/photo/AF1QipM02C9BdH7jb46d5mmLnlBz9zEmXFLnlGNqC02Q
+
+![IMG_20240425_191017657](https://github.com/Honazo/Easys_ros/assets/63952012/ba5f1a36-9035-467b-a4fc-b0b332ea0b3c)
 
 上側外部フレームにスラスターマウントを接続します。
 
