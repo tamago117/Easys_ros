@@ -26,7 +26,12 @@
 
 ### 2.1  メイン回路
 
+
+
 回路図は以下の通りです。
+
+
+https://photos.google.com/photo/AF1QipPIGC88t4_c1m9DzCCM4yatyo6ockO62BAwN5Ce
 
 ラズパイのUSBポートにwebカメラのUSB端子を接続します。
 
@@ -58,6 +63,11 @@ https://photos.google.com/photo/AF1QipOBrPf4KzAw2HFzhHzbsw0A3fmQ6uDxsLyoG9jG
 
 ### 3.2 バッテリーボックス
 
+バッテリーボックスの底面の4つの穴すべてにインサートナットを熱圧入します。
+
+https://photos.google.com/photo/AF1QipPMnMNCst_3OrLbGvNdTrm9Rvhi672HmYDeoZMk
+
+
 バッテリーボックスの辺が短い方の側面にΦ12mmの穴を1つあけます。
 電動ドリル等を用いて安全に行ってください。
 
@@ -82,6 +92,8 @@ TコネクタでLi-Poバッテリーを接続します。
 ### 3.3 外郭フレーム
 バッテリーボックス固定用のマウントに下側外部フレームを接続します。
 バッテリーボックス固定用のマウントにバッテリーボックスを接続します。
+
+https://photos.google.com/photo/AF1QipM02C9BdH7jb46d5mmLnlBz9zEmXFLnlGNqC02Q
 
 上側外部フレームにスラスターマウントを接続します。
 
