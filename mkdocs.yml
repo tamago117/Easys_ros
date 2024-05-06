@@ -1,0 +1,6 @@
+site_name: Easys
+docs_dir: 'documents'
+theme:
+  name: material
+  palette:
+    primary: blue
