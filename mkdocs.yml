@@ -3,4 +3,26 @@ docs_dir: 'documents'
 theme:
   name: material
   palette:
-    primary: blue
+    primary: light blue
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/robot
+
+plugins:
+  search:
+    lang: 'ja'
+
+# github icon
+repo_url: https://github.com/tamago117/Easys_ros
+repo_name: tamago117/Easys_ros
+
+extra:
+  generator: false
+
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Japanese
+      link: /
+      lang: ja
