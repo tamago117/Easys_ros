@@ -1,5 +1,6 @@
 site_name: Easys
 docs_dir: 'documents'
+use_directory_urls: false
 theme:
   name: material
   palette:
@@ -9,8 +10,16 @@ theme:
     logo: material/robot
 
 plugins:
-  search:
-    lang: 'ja'
+  - search:
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        ja: 日本語
+      nav_translations:
+        ja:
+          Easys_ros: いしすろす
+          Manufacturing instructions: 組み立て手順書
 
 # github icon
 repo_url: https://github.com/tamago117/Easys_ros
@@ -18,11 +27,3 @@ repo_name: tamago117/Easys_ros
 
 extra:
   generator: false
-
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: Japanese
-      link: /
-      lang: ja
