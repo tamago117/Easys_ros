@@ -14,12 +14,13 @@ plugins:
   - i18n:
       default_language: en
       languages:
-        en: English
-        ja: 日本語
-      nav_translations:
-        ja:
-          Easys_ros: いしすろす
-          Manufacturing instructions: 組み立て手順書
+      - locale: en
+        name: English
+        build: true
+        default: true
+      - locale: ja
+        name: 日本語
+        build: true
 
 # github icon
 repo_url: https://github.com/tamago117/Easys_ros
