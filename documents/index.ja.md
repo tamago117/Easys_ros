@@ -1,3 +1,4 @@
+--> [English Page](https://tamago117.github.io/Easys_ros/index.html)
 # Easys_ros
 Easysはオープンソースの水中ロボットです。このリポジトリには、ハードウェアおよびソフトウェアのソース（ROS2）が含まれています。
 

@@ -1,4 +1,6 @@
+--> [日本語ページ](https://tamago117.github.io/Easys_ros/ja/index.html)
 # Easys_ros
+
 Easys is an open source under water robot. This repository contains hardware and software source(ROS2).
 
 ※ **Currently working on an improved version!**
