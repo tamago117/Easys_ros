@@ -14,11 +14,18 @@
 
 - [部品リスト](https://docs.google.com/spreadsheets/d/1spEkeJp3uywtmMTm2RyMCUT-x4rrJNMb/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
 
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/764897ff-a218-4242-aec6-9c1a5518aad4" width="50%">
+
+
 ### 1.2 3Dプリントパーツの作成
 
 下記3Dプリンタ部品リストのパーツを印刷します。
 
 - [3Dプリンタ部品リスト](https://docs.google.com/spreadsheets/d/1m-tpGwKx88t4YWLlDcRS2Wr9CotMB-zd/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
+
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/491e8cb3-8beb-4b62-b75e-d3bc0dcf2273" width="50%">
 
 
 家庭用サイズのFDM式3Dプリンターを想定しています。
