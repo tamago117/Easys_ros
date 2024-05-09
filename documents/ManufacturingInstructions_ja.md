@@ -10,13 +10,16 @@
 
 ## 1. 部品の準備
 ### 1.1 部品の購入
-下記部品リストにある部品を全て購入してください（3Dプリントパーツ以外）
+下記部品リストにある部品を全て購入します（3Dプリントパーツ以外）。
 
-- [部品リスト]()
+- [部品リスト](https://docs.google.com/spreadsheets/d/1spEkeJp3uywtmMTm2RyMCUT-x4rrJNMb/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
 
 ### 1.2 3Dプリントパーツの作成
 
-部品リストの3Dプリントパーツを印刷します。
+下記3Dプリンタ部品リストのパーツを印刷します。
+
+- [3Dプリンタ部品リスト](https://docs.google.com/spreadsheets/d/1m-tpGwKx88t4YWLlDcRS2Wr9CotMB-zd/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
+
 
 家庭用サイズのFDM式3Dプリンターを想定しています。
 
