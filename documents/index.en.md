@@ -24,20 +24,21 @@ Easys is an open source under water robot. This repository contains hardware and
 - ROS2 humble
 
 ### installation
+
 ```
 cd (your workspace)/src
 git clone https://github.com/tamago117/Easys_ros.git
-colcon build
+colcon build --symlink-install
 ```
 
 ### usage
 
 ```
 # robot terminal
-ros2 launch Easys_ros Easys_control.launch
+ros2 launch Easys_ros Easys_control.launch.py
 ```
 ```
 # remote PC terminal
-ros2 launch Easys_ros remote_control.launch
+ros2 launch Easys_ros remote_control.launch.py
 ```
 

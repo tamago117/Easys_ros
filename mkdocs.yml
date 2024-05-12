@@ -1,3 +1,6 @@
+# Setup mkdocs
+# pip install mkdocs-static-i18n mkdocs-material
+
 site_name: Easys - Open Source Under Water Robot
 docs_dir: 'documents'
 use_directory_urls: false

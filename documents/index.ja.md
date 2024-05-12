@@ -26,16 +26,16 @@ Easysはオープンソースの水中ロボットです。このリポジトリ
 ```
 cd (your workspace)/src
 git clone https://github.com/tamago117/Easys_ros.git
-colcon build
+colcon build --symlink-install
 ```
 
 ### 使用方法
 
 ```
 # robot terminal
-ros2 launch Easys_ros Easys_control.launch
+ros2 launch Easys_ros Easys_control.launch.py
 ```
 ```
 # remote PC terminal
-ros2 launch Easys_ros remote_control.launch
+ros2 launch Easys_ros remote_control.launch.py
 ```

@@ -24,17 +24,17 @@ https://drive.google.com/drive/folders/1nr-dIgoqMnhwZie1suLELQvrDiUapply?usp=sha
 ```
 cd (your workspace)/src
 git clone https://github.com/tamago117/Easys_ros.git
-colcon build
+colcon build --symlink-install
 ```
 
 ### usage
 
 ```
 # robot terminal
-ros2 launch Easys_ros Easys_control.launch
+ros2 launch Easys_ros Easys_control.launch.py
 ```
 ```
 # remote PC terminal
-ros2 launch Easys_ros remote_control.launch
+ros2 launch Easys_ros remote_control.launch.py
 ```
 
