@@ -1,4 +1,4 @@
-![image](https://github.com/Honazo/Easys_ros/assets/63952012/5356a2de-56a8-417c-9f51-464f04031e0d)![image](https://github.com/Honazo/Easys_ros/assets/63952012/eae7eb92-db17-4e66-99c9-3653474149bb)# 組み立て手順書
+# 組み立て手順書
 
 ## 内容
 - 1. 部品の準備
@@ -54,7 +54,7 @@
 
 <img src="https://github.com/Honazo/Easys_ros/assets/63952012/ab8e0a15-5a58-4cfb-ac4f-dfc6b16a2c55" width="50%">
 
-下の図は写真と同じ回路部をCADで再現したものです。3つの回路マウントを接続して1つにまとめています。
+下の図は写真と同じ回路部をCADで再現したものです。
 
 <img src="https://github.com/Honazo/Easys_ros/assets/63952012/4d56b683-03c3-4a9a-9a16-1bd4bd69a64c" width="50%">
 
@@ -68,16 +68,25 @@
 
 耐圧容器外に出るケーブルには、あらかじめケーブルグランドを通しておきます。
 
+
+
 4台のスラスターの3本のケーブルにはそれぞれ3穴のケーブルグランドを、2芯の電源線には1穴のケーブルグランドを通します。
 
 ケーブルグランドが通ったら後方フランジの穴にケーブルグランドを固定します。
 
 
-<img src="https://github.com/Honazo/Easys_ros/assets/63952012/4d56b683-03c3-4a9a-9a16-1bd4bd69a64c" width="50%">
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/44abfc17-d6d4-414a-ac50-613bca0fdfa9" width="50%">
 
 
-LANケーブルは先端のコネクタが大きくてケーブルグランドに通らないため、コネクタから数cmのところで1度切断します。
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/ae6b3736-ca55-459b-b670-bcd48589ace9" width="50%">
+
+
+LANケーブルは先端のコネクタが大きくてケーブルグランドに通らないため、コネクタから数cmのところで一旦切断します。
 ケーブルグランドを通し、後方フランジの穴に固定した後、切断した箇所をはんだ付けして再接続します。
+
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/f7571093-308c-4508-bb1f-da3c620806fe" width="50%">
+
 
 #### 2.2.2 コネクタの接続
 
@@ -86,18 +95,60 @@ LANケーブルは先端のコネクタが大きくてケーブルグランド�
 ケーブルグランドを固定した後、電源線にはTコネクタを接続します。
 スラスターの3本線には3相用のコネクタを接続します。
 
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/c88c3423-1f0d-49d4-a997-446f27048139" width="50%">
+
+
 下の写真は回路マウントの1つ目のブロックです。
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/2862b783-b833-4fb0-b345-362af9da5a11" width="50%">
+
+
 Tコネクタのメスを並列に配線した基板と、縦に積んだ4つのESCを横並びに配置し、マウントに固定します。
+
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/ff4dc029-8022-4a6c-97c0-8cf0c20adea6" width="50%">
+
 
 4つのESCに対してそれぞれ、電源線にはTコネクタを、3相の出力には3相用のコネクタを接続します。
 
-#### 2.2.3 降圧コンバータ回路
+#### 2.2.3 降圧コンバータ回路・サーボコントローラ
 
 降圧コンバータからは下の写真のように配線を出します。
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/58ef4fdb-c10f-4b40-b6d4-5685c856a0a8" width="50%">
+
+
 入力電圧側、出力電圧側にそれぞれTコネクタを接続します。
+
+4つのESCに入力するPWM信号を生成するサーボコントローラの出力端子にESCの信号入力線(黒、赤、白、黄の4線)を接続します。
+
+ESC側の①黒(GND)、②赤(V+)、③白(PWM)をサーボコントローラ側の①黒(GND)、②赤(V+)、③黄(PWM)に接続します。(ESCの黄の線は使いません。)
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/1f69091b-dfed-4536-a566-d70a1b9d513e" width="50%">
+
 
 #### 2.2.4 Rsapberry Pi 4
 
+降圧コンバータから出力された5V電源とサーボコントローラへの入力(GND,VCC,SCL,SDA)、IMU、Raspberry Pi 4の接続はユニバーサル基板上で配線しています。
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/b0a82e16-43a1-4015-979a-24139510946f" width="50%">
+
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/78a15f1f-3f58-4925-93b2-888858d24fc6" width="50%">
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/29d9651c-d88c-4d59-90ac-f01ac327607f" width="50%">
+
+
+冒頭の回路図を頼りに製作してください。
+
+Raspberry Pi 4　はケースを着用し、3つ目の回路マウントに接続します。
+
+<img src="https://github.com/Honazo/Easys_ros/assets/63952012/34269222-ebf4-44c3-9311-b2d6781077a9" width="50%">
+
+
+最後に、3つの回路マウントと後方フランジをボルトナットで接続します。
+
+![image](https://github.com/Honazo/Easys_ros/assets/63952012/9838bbc2-b4cb-4a73-a127-9a512312a104)
 
 
 ## 3. 組み立て
