@@ -14,16 +14,16 @@ Easys is an open source under water robot. This repository contains hardware and
 ![IMG_9673](https://github.com/tamago117/Easys_ros/assets/38370926/150ee971-6230-4fc3-9c5f-c7301954f7d2)
 ![P8132769](https://github.com/tamago117/Easys_ros/assets/38370926/9c8923b8-014f-4e5c-a402-4565e1488479)
 
-## hardware
+## Hardware
 [https://drive.google.com/drive/folders/1nr-dIgoqMnhwZie1suLELQvrDiUapply?usp=sharing](https://drive.google.com/drive/folders/1nr-dIgoqMnhwZie1suLELQvrDiUapply?usp=sharing)
 
-## software
-### environment
+## Software
+### Environment
 - raspberry pi4 (higher than 4Gb RAM)
 - ubuntu 22.04
 - ROS2 humble
 
-### installation
+### Installation
 
 ```
 cd (your workspace)/src
@@ -31,7 +31,7 @@ git clone https://github.com/tamago117/Easys_ros.git
 colcon build --symlink-install
 ```
 
-### usage
+### Usage
 
 ```
 # robot terminal

@@ -17,8 +17,8 @@ Easys is an open source under water robot. This repository contains hardware and
 ## Hardware
 [3D model](https://drive.google.com/drive/folders/1nr-dIgoqMnhwZie1suLELQvrDiUapply?usp=sharing)
 ### Manufacturing Instruction
-- [English ver](documents/ManufacturingInstructions_en.md)
-- [日本語](documents/ManufacturingInstructions_ja.md)
+- [English ver](documents/ManufacturingInstructions.en.md)
+- [日本語](documents/ManufacturingInstructions.ja.md)
 
 ## Software
 ### Environment
