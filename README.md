@@ -3,7 +3,7 @@ Easys is an open source under water robot. This repository contains hardware and
 
 [&rarr; Document Page](https://tamago117.github.io/Easys_ros/)
 
-![Youtube](https://youtu.be/4HA7E2-nBuU?si=SOEqNSd_vYKx65Tm)
+[&rarr; ICRA2024 Stand-alone Video](https://youtu.be/4HA7E2-nBuU?si=SOEqNSd_vYKx65Tm)
 
 ※ **Currently working on an improved version!**
 - Add odometry function
