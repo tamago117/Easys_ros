@@ -1,0 +1,33 @@
+# Setup mkdocs
+# pip install mkdocs-static-i18n mkdocs-material
+
+site_name: Easys - Open Source Under Water Robot
+docs_dir: 'documents'
+use_directory_urls: false
+theme:
+  name: material
+  palette:
+    primary: light blue
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/water
+
+plugins:
+  - search:
+  - i18n:
+      default_language: en
+      languages:
+      - locale: en
+        name: English
+        build: true
+        default: true
+      - locale: ja
+        name: 日本語
+        build: true
+
+# github icon
+repo_url: https://github.com/tamago117/Easys_ros
+repo_name: tamago117/Easys_ros
+
+extra:
+  generator: false
