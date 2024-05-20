@@ -13,7 +13,9 @@ Purchase all the parts listed in the parts list below (excluding 3D printed part
 
 - [Parts List](https://docs.google.com/spreadsheets/d/1spEkeJp3uywtmMTm2RyMCUT-x4rrJNMb/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
 
-![Parts](https://github.com/Honazo/Easys_ros/assets/63952012/764897ff-a218-4242-aec6-9c1a5518aad4)
+
+![image](https://github.com/Honazo/Easys_ros/assets/63952012/cd761d00-b05f-438c-a78a-9fa95a636082)
+
 
 ### 1.2 Creating 3D Printed Parts
 
@@ -21,7 +23,8 @@ Print the parts from the 3D printer parts list below.
 
 - [3D Printer Parts List](https://docs.google.com/spreadsheets/d/1m-tpGwKx88t4YWLlDcRS2Wr9CotMB-zd/edit?usp=sharing&ouid=116393592539270427202&rtpof=true&sd=true)
 
-![3D Printed Parts](https://github.com/Honazo/Easys_ros/assets/63952012/491e8cb3-8beb-4b62-b75e-d3bc0dcf2273)
+![image](https://github.com/Honazo/Easys_ros/assets/63952012/3e336ccb-949d-4b08-8d8e-af62c2321635)
+
 
 Assuming a home-sized FDM 3D printer.
 
