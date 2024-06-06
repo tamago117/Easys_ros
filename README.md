@@ -25,6 +25,9 @@ Easys is an open source under water robot. This repository contains hardware and
 - raspberry pi4 (higher than 4Gb RAM)
 - ubuntu 22.04
 - ROS2 humble
+### Setup Raspberry Pi
+- [English ver](documents/RaspberryPiSetup.en.md)
+- [日本語](documents/RaspberryPiSetup.ja.md)
 
 ### Installation
 ```
