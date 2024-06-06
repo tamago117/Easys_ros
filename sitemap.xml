@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>NoneManufacturingInstructions.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneManufacturingInstructions.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ManufacturingInstructions.html"/>
+    </url>
+    <url>
+        <loc>NoneRaspberryPiSetup.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneRaspberryPiSetup.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/RaspberryPiSetup.html"/>
+    </url>
+    <url>
+        <loc>Noneindex.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/index.html"/>
+    </url>
+    <url>
+        <loc>Noneja/ManufacturingInstructions.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/ManufacturingInstructions.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneManufacturingInstructions.html"/>
+    </url>
+    <url>
+        <loc>Noneja/RaspberryPiSetup.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/RaspberryPiSetup.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneRaspberryPiSetup.html"/>
+    </url>
+    <url>
+        <loc>Noneja/index.html</loc>
+        <lastmod>2024-06-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneja/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+    </url>
+</urlset>
