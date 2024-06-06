@@ -4,7 +4,7 @@ on:
     branches:
       - master 
       - main
-      - add-mkdocs
+      - add-software-dcos
   workflow_dispatch:
 permissions:
   contents: write
