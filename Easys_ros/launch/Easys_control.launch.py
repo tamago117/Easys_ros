@@ -46,6 +46,11 @@ def generate_launch_description():
             remappings=[("/bno055/imu", "imu")],
             )
 
+    ms5837_bar02 = Node(
+            package="ms5837_bar_ros",
+            executable="bar02_node",
+            )
+
     v4l2_camera = Node(
             package="v4l2_camera",
             executable="v4l2_camera_node",)
@@ -56,6 +61,7 @@ def generate_launch_description():
         Easys_controller,
         thruster_controller,
         bno055,
+        ms5837_bar02,
         v4l2_camera,
     ])
 

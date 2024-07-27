@@ -44,6 +44,8 @@ class ThrusterController(Node):
 
     def scale_input(self, input):
         # Scale input from -1 - 1 to min_pulse - max_pulse
+        offset = 0.15
+        input += offset
         return int(((input + 1) / 2) * (self.max_pulse - self.min_pulse) + self.min_pulse)
 
 def main(args=None):
