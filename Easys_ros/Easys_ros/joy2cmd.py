@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
+from std_msgs.msg import Bool
 
 class JoyToTwist(Node):
 
@@ -13,18 +14,41 @@ class JoyToTwist(Node):
 
         # cmd_vel topicにデータをpublish
         self.twist_pub = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.arm_pub = self.create_publisher(Bool, 'arm_control_command', 10)
+        self.light_pub = self.create_publisher(Bool, 'light_control_command', 10)
 
         self.slow_gain = 0.3
 
+        # initial control command
+        self.arm_control_command = False
+        self.light_control_command = False
+
     def joy_callback(self, msg):
-        # JoyメッセージからTwistメッセージを作成します
         twist = Twist()
+        arm_command = Bool()
+        light_command = Bool()
 
         if msg.buttons[9] == 1:
             slow_mode = False
         else:
             slow_mode = True
 
+        # arm
+        if msg.buttons[1] == 1 and self.arm_control_command == False:
+            self.arm_control_command = True
+        elif msg.buttons[1] == 1 and self.arm_control_command == True:
+            self.arm_control_command = False
+
+        # light
+        if msg.buttons[3] == 1 and self.light_control_command == False:
+            self.light_control_command = True
+        elif msg.buttons[3] == 1 and self.light_control_command == True:
+            self.light_control_command = False
+
+        arm_command.data = self.arm_control_command
+        light_command.data = self.light_control_command
+
+        # twist
         twist.linear.x = msg.axes[3]
         twist.angular.z = msg.axes[0]
 
@@ -38,8 +62,10 @@ class JoyToTwist(Node):
             twist.angular.z = self.slow_gain*twist.angular.z
             twist.linear.z = self.slow_gain*twist.linear.z
 
-        # Twistメッセージをpublishします
+        # publish
         self.twist_pub.publish(twist)
+        self.arm_pub.publish(arm_command)
+        self.light_pub.publish(light_command)
 
 def main(args=None):
     rclpy.init(args=args)
