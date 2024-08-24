@@ -38,7 +38,7 @@ colcon build --symlink-install
 
 ### Install dependency packages (remote PC)
 - [yolov8_ros](https://github.com/mgonzs13/yolov8_ros)
-
+- [rviz_2d_overlay_plugins](https://github.com/teamspatzenhirn/rviz_2d_overlay_plugins)
 ### Usage
 
 ```

@@ -42,7 +42,7 @@ def generate_launch_description():
                 'threshold': '0.7',
                 }.items(),
                 )
-    launch_description_list.append(yolov8_launch_cmd)
+#     launch_description_list.append(yolov8_launch_cmd)
 
     # rviz2
     rviz2 = Node(
