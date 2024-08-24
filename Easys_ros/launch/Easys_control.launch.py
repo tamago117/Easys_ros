@@ -54,14 +54,18 @@ def generate_launch_description():
             remappings=[("/bno055/imu", "imu")],
             )
 
-    ms5837_bar02 = Node(
+    ms5837_bar30 = Node(
             package="ms5837_bar_ros",
-            executable="bar02_node",
+            executable="bar30_node",
             )
 
     v4l2_camera = Node(
             package="v4l2_camera",
-            executable="v4l2_camera_node",)
+            executable="v4l2_camera_node",
+            parameters=[{
+                'image_size': [480, 360]  # ここで画像サイズを指定します（例: 640x480）
+            }],
+        )
 
 
     return LaunchDescription([
@@ -71,14 +75,6 @@ def generate_launch_description():
         arm_controller,
         light_controller,
         bno055,
-        ms5837_bar02,
+        ms5837_bar30,
         v4l2_camera,
     ])
-
-"""
-    <!--<node pkg="bno055" exec="bno055">
-        <param name="config" value="$(find Easys_ros)/config/bno055_params_i2c.yaml"/>
-    </node>-->
-    
-    <!--<node pkg="v4l2_camera" exec="v4l2_camera"/>-->
-    """

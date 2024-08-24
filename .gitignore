@@ -1,5 +1,8 @@
 */build
 */install
 */log
+/build
+/install
+/log
 __pycache__
 site
