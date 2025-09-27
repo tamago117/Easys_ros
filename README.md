@@ -1,17 +1,14 @@
 # Easys_ros
 Easys is an open source under water robot. This repository contains hardware and software source(ROS2).
 
-[&rarr; Document Page](https://tamago117.github.io/Easys_ros/)
-
-[&rarr; ICRA2024 Stand-alone Video](https://youtu.be/4HA7E2-nBuU?si=SOEqNSd_vYKx65Tm)
-
-※ **New hardware is coming!**
-
-[Easys A1](https://hrjp.notion.site/Easys-A1-Document-211281df162280af8de3f84531e12f15)
-
+### [New version is coming!](https://github.com/easysur/easys_a1)
 
 ![IMG_9673](https://github.com/tamago117/Easys_ros/assets/38370926/150ee971-6230-4fc3-9c5f-c7301954f7d2)
 ![P8132769](https://github.com/tamago117/Easys_ros/assets/38370926/9c8923b8-014f-4e5c-a402-4565e1488479)
+
+[&rarr; Document Page](https://tamago117.github.io/Easys_ros/)
+
+[&rarr; ICRA2024 Stand-alone Video](https://youtu.be/4HA7E2-nBuU?si=SOEqNSd_vYKx65Tm)
 
 ## Hardware
 [3D model](https://drive.google.com/drive/folders/1nr-dIgoqMnhwZie1suLELQvrDiUapply?usp=sharing)
