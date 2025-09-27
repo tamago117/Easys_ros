@@ -14,7 +14,8 @@ setup(
         ('share/' + package_name + '/launch', ['launch/Easys_control.launch.py',
                                                'launch/remote_control.launch.py',
                                                'launch/yolov8.launch.py',]),
-        ('share/' + package_name + '/config', ['config/bno055_params_i2c.yaml']),
+        ('share/' + package_name + '/config', ['config/bno055_params_i2c.yaml',
+                                               'config/easys.rviz',]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -30,6 +31,8 @@ setup(
             'thruster_controller = Easys_ros.thruster_controller:main',
             'Easys_controller = Easys_ros.Easys_controller:main',
             'thruster_output_converter = Easys_ros.thruster_output_converter:main',
+            'arm_controller = Easys_ros.arm_controller:main',
+            'light_controller = Easys_ros.light_controller:main',
         ],
     },
 )

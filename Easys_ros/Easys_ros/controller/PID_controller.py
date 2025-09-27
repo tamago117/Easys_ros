@@ -2,7 +2,7 @@ from .PID import PID
 
 class PID_controller:
     def __init__(self, config):
-        # PIDパラメータ
+        # PID parameters
         self.rollP = config["rollP"]
         self.rollI = config["rollI"]
         self.rollD = config["rollD"]
@@ -14,25 +14,25 @@ class PID_controller:
         self.roll_PID = PID(self.rollP, self.rollI, self.rollD, self.dt, -999, 999)
         self.pitch_PID = PID(self.pitchP, self.pitchI, self.pitchD, self.dt, -999, 999)
 
-        # 初期のVxとVzの値
         self.prev_Vx = 0
         self.prev_Vz = 0
         self.prev_yaw_rate = 0
-        # フィルタの定数
-        self.alpha = 0.08  # 例えば0.2としてみましたが、実際には調整が必要です
 
-    def control(self, current_roll, current_pitch, Vx, Vz, yaw_rate):#軸のトルクを各スラスターへの力に変換します
+        # filter parameter
+        self.alpha = 0.12
+
+    # 
+    def control(self, current_roll, current_pitch, Vx, Vz, yaw_rate):
         # カメラの視線の方向をX軸，重力方向をZ軸，ロボット後方からみて右側をY軸とする．座標原点は９軸座標の原点
         # Vx: Z方向の速度 (+-0の3値でいいかもしれない)
         # Vz :　Z方向の速度
         # yow_rate: Yaw方向の角速度
 
-        # ローパスフィルターでVxとVzを滑らかにする
+        # low pass filter
         Vx_filtered = (1 - self.alpha) * self.prev_Vx + self.alpha * Vx
         Vz_filtered = (1 - self.alpha) * self.prev_Vz + self.alpha * Vz
         yaw_rate_filtered = (1 - self.alpha) * self.prev_yaw_rate + self.alpha * yaw_rate
 
-        # 次のステップのために値を保存
         self.prev_Vx = Vx_filtered
         self.prev_Vz = Vz_filtered
         self.prev_yaw_rate = yaw_rate_filtered

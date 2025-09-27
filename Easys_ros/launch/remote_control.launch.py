@@ -20,12 +20,6 @@ def generate_launch_description():
             )
     launch_description_list.append(joy_node)
 
-    rqt_image_view = Node(
-            package='rqt_image_view',
-            executable='rqt_image_view',
-            )
-    launch_description_list.append(rqt_image_view)
-
     uncompressed_image = Node(
             package='image_transport',
             executable='republish',
@@ -48,7 +42,15 @@ def generate_launch_description():
                 'threshold': '0.7',
                 }.items(),
                 )
-    launch_description_list.append(yolov8_launch_cmd)
+#     launch_description_list.append(yolov8_launch_cmd)
 
+    # rviz2
+    rviz2 = Node(
+                package='rviz2',
+                executable='rviz2',
+                arguments=['-d', os.path.join(get_package_share_directory('Easys_ros'), 'config', 'easys.rviz')],
+                output='screen'
+    )
+    launch_description_list.append(rviz2)
 
     return LaunchDescription(launch_description_list)
